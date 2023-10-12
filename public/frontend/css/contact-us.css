@@ -1,0 +1,258 @@
+#contact {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0 100px;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+    font-size: 50px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 10px;
+}
+.form-horizontal .form-group {
+    margin-bottom: 20px;
+}
+
+.form-control,
+textarea {
+    max-width: 400px;
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 14px;
+    min-height: 45px;
+    border-color: #000;
+}
+
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 120px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    padding: 7px 0;
+    background: linear-gradient(
+        90deg,
+        rgba(79, 31, 255, 1) 0%,
+        rgba(112, 31, 255, 1) 100%
+    );
+}
+
+.alt-send-button {
+    width: 120px;
+    height: 34px;
+    transition: all 0.2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    margin-top: 13px;
+    font: 700 12px "Lato", sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    font: 300 18px "Lato", sans-serif;
+    letter-spacing: 1.9px;
+    color: #000;
+}
+
+.place {
+    margin-left: 32px;
+}
+
+.phone {
+    margin-left: 27px;
+}
+
+.gmail {
+    margin-left: 30px;
+}
+
+.contact-text a {
+    color: #000;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: #556ee6;
+    text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 10px 3px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #00000050;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.social-media-list li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #556ee6;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #556ee6;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px "Oswald", sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .direct-contact-container,
+    .form-horizontal {
+        margin: 0 auto;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+    .form-control,
+    textarea {
+        margin: 0 auto;
+    }
+
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+}

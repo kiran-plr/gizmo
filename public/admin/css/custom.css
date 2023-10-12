@@ -1,0 +1,159 @@
+.invalid-feedback {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #f46a6a;
+}
+
+.button-flex {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.configuration tr td {
+    vertical-align: middle;
+}
+
+.import-button-file {
+    display: none;
+}
+
+.input-group-lg .custom-file-label {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* Image Upload */
+.upload-selecter {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #cfd6e5;
+    min-height: 95px;
+    margin-bottom: 0px;
+}
+
+.upload-selecter .upload-selecter-btn {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-selecter .upload-selecter-btn:hover {
+    color: #fff;
+}
+
+.upload-selecter span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.form-group .plus-box {
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #cfd6e5;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-icon-overlay .icon .imagePreview {
+    position: relative;
+    cursor: pointer;
+}
+
+.remove-icon-overlay .icon .imagePreview .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.remove-icon-overlay .icon .imagePreview:hover .overlay {
+    opacity: 1;
+}
+.product-image {
+    height: 100px;
+    width: 100px;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+ul.sortimage-order.ui-sortable {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ul.sortimage-order.ui-sortable .col {
+    width: 15%;
+    flex-basis: inherit;
+    flex-grow: inherit;
+    padding: 0 15px;
+}
+
+.remove_thumb i {
+    font-size: 20px;
+}
+
+.log-message {
+    overflow: auto;
+    max-height: 600px;
+}
+
+.shipment-product-variants ul {
+    padding: 0;
+    list-style: none;
+}
+
+.shipment-product-variants ul li {
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.shipment-product-variants ul li span {
+    font-weight: 300;
+    color: #666666;
+}
+
+.action-button-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.toolbar {
+    float: right;
+}
+
+.add-user-button {
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 1rem;
+}
